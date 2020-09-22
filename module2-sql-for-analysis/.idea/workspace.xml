@@ -24,13 +24,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="040d4cd7-6f26-4adf-8671-82eae153adbd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/titanic_practice.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/module2-sql-for-analysis.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/module2-sql-for-analysis.iml" afterDir="false" />
+    <list default="true" id="040d4cd7-6f26-4adf-8671-82eae153adbd" name="Default Changelist" comment="SQL stuff">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SQL-data-whyse.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/titanic_practice.py" beforeDir="false" afterPath="$PROJECT_DIR$/titanic_practice.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,6 +90,21 @@
       <option name="presentableId" value="Default" />
       <updated>1600733578842</updated>
     </task>
+    <task id="LOCAL-00001" summary="SQL stuff">
+      <created>1600737643103</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1600737643103</updated>
+    </task>
+    <task id="LOCAL-00002" summary="SQL stuff">
+      <created>1600737668600</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1600737668600</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -107,30 +118,38 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="SQL stuff" />
+    <option name="LAST_COMMIT_MESSAGE" value="SQL stuff" />
+  </component>
   <component name="WindowStateProjectService">
-    <state width="1345" height="192" key="GridCell.Tab.0.bottom" timestamp="1600737576833">
+    <state width="1345" height="192" key="GridCell.Tab.0.bottom" timestamp="1600738090892">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1345" height="192" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1600737576833" />
-    <state width="1345" height="192" key="GridCell.Tab.0.center" timestamp="1600737576833">
+    <state width="1345" height="192" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1600738090892" />
+    <state width="1345" height="192" key="GridCell.Tab.0.center" timestamp="1600738090892">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1345" height="192" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1600737576833" />
-    <state width="1345" height="192" key="GridCell.Tab.0.left" timestamp="1600737576833">
+    <state width="1345" height="192" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1600738090892" />
+    <state width="1345" height="192" key="GridCell.Tab.0.left" timestamp="1600738090891">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1345" height="192" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1600737576833" />
-    <state width="1345" height="192" key="GridCell.Tab.0.right" timestamp="1600737576833">
+    <state width="1345" height="192" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1600738090891" />
+    <state width="1345" height="192" key="GridCell.Tab.0.right" timestamp="1600738090892">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1345" height="192" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1600737576833" />
+    <state width="1345" height="192" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1600738090892" />
     <state x="184" y="29" key="SettingsEditor" timestamp="1600734366830">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="184" y="29" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1600734366830" />
-    <state x="500" y="298" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600734566301">
+    <state x="275" y="117" key="Vcs.Push.Dialog.v2" timestamp="1600737672286">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="500" y="298" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.768@0.0.1366.768" timestamp="1600734566301" />
+    <state x="275" y="117" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1600737672286" />
+    <state x="500" y="298" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600737616934">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="500" y="298" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.768@0.0.1366.768" timestamp="1600737616934" />
   </component>
 </project>
