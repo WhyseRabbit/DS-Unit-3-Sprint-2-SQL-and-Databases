@@ -22,7 +22,6 @@ print(type(cursor))
 
 
 titan_sql = """
-DROP TABLE IF EXISTS passengers;
 DROP TABLE IF EXISTS titanic_practice;
 CREATE TABLE IF NOT EXISTS titanic_practice (
     id SERIAL PRIMARY KEY,
