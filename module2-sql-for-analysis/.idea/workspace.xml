@@ -25,9 +25,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="040d4cd7-6f26-4adf-8671-82eae153adbd" name="Default Changelist" comment="removed personal info; inserted csv">
-      <change afterPath="$PROJECT_DIR$/../module3-nosql-and-document-oriented-databases/Whyse-Sprint-3-3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SC09/.idea/SC09.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module1-introduction-to-sql/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module1-introduction-to-sql/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module1-introduction-to-sql/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module1-introduction-to-sql/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module1-introduction-to-sql/.idea/module1-introduction-to-sql.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module1-introduction-to-sql/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module1-introduction-to-sql/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3-nosql-and-document-oriented-databases/.idea/module3-nosql-and-document-oriented-databases.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonProject/.idea/pythonProject.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/titanic_practice.py" beforeDir="false" afterPath="$PROJECT_DIR$/titanic_practice.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +60,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
@@ -150,22 +159,26 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="363" y="120" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.768@0.0.1366.768" timestamp="1600738558889" />
-    <state width="1345" height="192" key="GridCell.Tab.0.bottom" timestamp="1600899503847">
+    <state x="0" y="278" key="FileChooserDialogImpl" timestamp="1601256691675">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1345" height="192" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1600899503847" />
-    <state width="1345" height="192" key="GridCell.Tab.0.center" timestamp="1600899503846">
+    <state x="0" y="278" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1601256691675" />
+    <state width="1328" height="97" key="GridCell.Tab.0.bottom" timestamp="1601408399629">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1345" height="192" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1600899503846" />
-    <state width="1345" height="192" key="GridCell.Tab.0.left" timestamp="1600899503846">
+    <state width="1328" height="97" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1601408399629" />
+    <state width="1328" height="97" key="GridCell.Tab.0.center" timestamp="1601408399628">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1345" height="192" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1600899503846" />
-    <state width="1345" height="192" key="GridCell.Tab.0.right" timestamp="1600899503847">
+    <state width="1328" height="97" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1601408399628" />
+    <state width="1328" height="97" key="GridCell.Tab.0.left" timestamp="1601408399628">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1345" height="192" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1600899503847" />
+    <state width="1328" height="97" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1601408399628" />
+    <state width="1328" height="97" key="GridCell.Tab.0.right" timestamp="1601408399629">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1328" height="97" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1601408399629" />
     <state x="184" y="29" key="SettingsEditor" timestamp="1600734366830">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
