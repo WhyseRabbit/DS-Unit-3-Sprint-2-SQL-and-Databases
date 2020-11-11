@@ -13,25 +13,25 @@ GET_CHARACTERS = """SELECT
 COUNT(DISTINCT character_id)
 FROM charactercreator_character;"""
 
-if __name__ == "__main__":
-    connect = db_get()
-    cursor = connect.cursor()
-    character_num = query_exec(cursor, GET_CHARACTERS)
-    print(f"There are {character_num} characters in this game.")
+connect = db_get()
+cursor = connect.cursor()
 
-# GET_SUBCLASS = """SELECT
-# charactercreator_character as char
-# (SELECT
-# COUNT(DISTINCT mage.character_ptr_id) as Mages)
-# FROM
-# char.character_id
-# JOIN charactercreator_mage as mage
-# ON char.character_id = mage.character_ptr_id
-# GROUP BY Mages;
-# """
-#
-# mage_subclass = query_exec(cursor, GET_SUBCLASS)
-# print(f"There are {mage_subclass} mages in this data.")
+character_num = query_exec(cursor, GET_CHARACTERS)
+print(f"There are {character_num} characters in this game.")
+
+GET_SUBCLASS = """SELECT
+charactercreator_character as char
+(SELECT
+COUNT(DISTINCT mage.character_ptr_id) as Mages)
+FROM
+char.character_id
+JOIN charactercreator_mage as mage
+ON char.character_id = mage.character_ptr_id
+GROUP BY Mages;
+"""
+
+mage_subclass = query_exec(cursor, GET_SUBCLASS)
+print(f"There are {mage_subclass} mages in this data.")
 
 GET_ITEM_NUM = """SELECT
 COUNT(DISTINCT item_id)
@@ -47,6 +47,6 @@ JOIN armory_item as item
 ON weapon.item_ptr_id = item.item_id"""
 
 weapon_num = query_exec(cursor, GET_WEAPON_NUM)
-print(f"There are {weapon_num} weapons, leaving"
-      f" 137 items that aren't weapons.")
+print(f"There are {weapon_num} weapons, leaving"\
+      f"{item_num} items that aren't weapons.")
 
