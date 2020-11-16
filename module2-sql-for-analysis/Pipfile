@@ -6,10 +6,12 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-pgadmin4 = {file = "https://ftp.postgresql.org/pub/pgadmin/pgadmin4/v4.23/pip/pgadmin4-4.23-py3-none-any.whl"}
 psycopg2-binary = "*"
 python-dotenv = "*"
 pandas = "*"
 
 [requires]
 python_version = "3.8"
+
+[packages.pgadmin4]
+file = "https://ftp.postgresql.org/pub/pgadmin/pgadmin4/v4.23/pip/pgadmin4-4.23-py3-none-any.whl"
