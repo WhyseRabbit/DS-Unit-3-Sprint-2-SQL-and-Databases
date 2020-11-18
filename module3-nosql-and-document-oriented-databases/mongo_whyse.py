@@ -1,6 +1,7 @@
-from pymongo import MongoClient
+import csv
 import os
 from dotenv import load_dotenv
+from pymongo import MongoClient
 
 load_dotenv()
 
@@ -16,14 +17,9 @@ db = client.titanic_database
 
 collection = db.titanic_stuff
 
-test_query = collection.insert_one({
-    "Survived" : 0,
-    "PCclass" : 3,
-    "Full_Name" : "Mr. Patrick Dooley",
-    "Gender" : "male",
-    "Age" : 32,
-    "Sib_Spouse_Count" : 0,
-    "Parent_Child_Count" : 0,
-    "Fare" : 7.75
-    })
+with open("titanic.csv", "r") as f:
+    reader = csv.DictReader(f)
+    a = list(reader)
+
+test_query = collection.insert_many(a)
 
