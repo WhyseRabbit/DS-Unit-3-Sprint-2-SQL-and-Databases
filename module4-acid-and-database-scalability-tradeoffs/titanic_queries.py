@@ -54,8 +54,8 @@ execute_values(cursor, insert_query, tuple_data)
 SURVIVOR_NUM = """
 SELECT
 COUNT(survived)
-GROUP BY survived
 FROM titanic_queries
+GROUP BY survived
 HAVING survived = True
 """
 
