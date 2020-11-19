@@ -38,9 +38,7 @@ cursor.execute(titanic_insert)
 
 
 data = pd.read_csv(CSV_FILEPATH)
-data["Survived"] = data["Survived"].values.astype(bool)
 data = data.astype("object")
-print(data.columns.tolist())
 
 tuple_data = list(data.to_records(index=False))
 
@@ -52,9 +50,9 @@ execute_values(cursor, insert_query, tuple_data)
 
 
 SURVIVOR_NUM = """
-SELECT survived
-FROM titanic_queries as tq
-GROUP BY tq.survived = true;
+SELECT
+COUNT(survived > 0)
+FROM titanic_queries;
 """
 
 survivor_count = cursor.execute(SURVIVOR_NUM)
