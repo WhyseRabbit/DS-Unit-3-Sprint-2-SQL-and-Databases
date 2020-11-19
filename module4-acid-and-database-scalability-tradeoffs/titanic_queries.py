@@ -85,8 +85,18 @@ WHERE survived = true
 GROUP BY pclass;
 """
 
+PCLASS_SORTED_DEATHS = """
+SELECT
+COUNT(pclass),
+COUNT(survived)
+FROM titanic_queries
+WHERE survived = false
+GROUP BY pclass;
+"""
+
 sorted_survivors = query_execute(cursor, PCLASS_SORTED_SURVIVORS)
-print("Survivors by Class: 1, 2, 3:", sorted_survivors)
+sorted_deaths = query_execute(cursor, PCLASS_SORTED_DEATHS)
+print("Survivors/Deaths by Class: 1, 2, 3:", sorted_survivors, sorted_deaths)
 
 connection.commit()
 cursor.close()
