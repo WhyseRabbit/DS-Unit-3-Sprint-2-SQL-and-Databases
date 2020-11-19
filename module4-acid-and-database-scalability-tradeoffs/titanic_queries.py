@@ -76,6 +76,18 @@ GROUP BY pclass;
 pclass_count = query_execute(cursor, PCLASS_NUM)
 print("1, 2, 3:", pclass_count)
 
+PCLASS_SORTED_SURVIVORS = """
+SELECT
+COUNT(pclass),
+COUNT(survived)
+FROM titanic_queries
+WHERE survived = true
+GROUP BY pclass;
+"""
+
+sorted_survivors = query_execute(cursor, PCLASS_SORTED_SURVIVORS)
+print(f"Survivors by Class:"\
+    f"1, 2, 3:", {sorted_survivors})
 
 connection.commit()
 cursor.close()
