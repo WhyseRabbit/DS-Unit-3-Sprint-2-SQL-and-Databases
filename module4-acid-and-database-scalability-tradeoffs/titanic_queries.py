@@ -51,16 +51,6 @@ VALUES %s"""
 execute_values(cursor, insert_query, tuple_data)
 
 
-connection.commit()
-cursor.close()
-connection.close()
-
-
-connect = psycopg2.connect(dbname=DB_NAME, user=DB_USER,
-                           password=DB_PW, host=DB_HOST)
-curs = connect.cursor()
-
-
 SURVIVOR_NUM = """
 SELECT
 COUNT(survived)
@@ -68,8 +58,8 @@ FROM titanic_queries
 WHERE survived = True;
 """
 
+curs = curs.fetchall()
 survivor_count = curs.execute(SURVIVOR_NUM)
-curs.fetchall()
 print(survivor_count)
 
 
