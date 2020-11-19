@@ -55,7 +55,7 @@ SURVIVOR_NUM = """
 SELECT
 COUNT(DISTINCT survived)
 FROM titanic_queries
-WHERE survived == True
+WHERE survived = True
 """
 
 survivor_count = cursor.execute(SURVIVOR_NUM)
