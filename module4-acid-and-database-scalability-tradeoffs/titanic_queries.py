@@ -58,8 +58,7 @@ connection.close()
 
 connect = psycopg2.connect(dbname=DB_NAME, user=DB_USER,
                            password=DB_PW, host=DB_HOST)
-cursor = connect.cursor()
-curs = cursor.fetchall()
+curs = connect.cursor()
 
 
 SURVIVOR_NUM = """
@@ -70,6 +69,7 @@ WHERE survived = True;
 """
 
 survivor_count = curs.execute(SURVIVOR_NUM)
+curs.fetchall()
 print(survivor_count)
 
 
