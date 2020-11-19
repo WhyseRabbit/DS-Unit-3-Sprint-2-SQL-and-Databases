@@ -58,11 +58,11 @@ FROM titanic_queries
 WHERE survived = True;
 """
 
-curs = curs.fetchall()
+curs = cursor.fetchall()
 survivor_count = curs.execute(SURVIVOR_NUM)
 print(survivor_count)
 
 
-connect.commit()
+connection.commit()
 curs.close()
-connect.close()
+connection.close()
