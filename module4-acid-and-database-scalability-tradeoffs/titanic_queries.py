@@ -51,6 +51,11 @@ VALUES %s"""
 execute_values(cursor, insert_query, tuple_data)
 
 
+def query_execute(cursor, query):
+    cursor.execute(query)
+    return cursor.fetchall()
+
+
 SURVIVOR_NUM = """
 SELECT
 COUNT(survived)
@@ -59,9 +64,8 @@ WHERE survived = True;
 """
 
 
-cursor.execute(SURVIVOR_NUM)
-survivor_count = cursor.fetchall()
-cursor.execute(survivor_count)
+survivor_count = query_execute(cursor, SURVIVOR_NUM)
+print(f"There were {survivor_count} survivors from the Titanic")
 
 
 connection.commit()
