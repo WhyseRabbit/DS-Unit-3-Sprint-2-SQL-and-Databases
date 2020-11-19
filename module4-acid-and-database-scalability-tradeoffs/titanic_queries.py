@@ -50,7 +50,7 @@ VALUES %s"""
 execute_values(cursor, insert_query, tuple_data)
 
 
-SURVIVOR_NUM = """
+SURVIVOR_NUM = f"""
 SELECT
 COUNT(survived)
 FROM titanic_queries
