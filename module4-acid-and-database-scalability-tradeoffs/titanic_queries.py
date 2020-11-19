@@ -14,7 +14,8 @@ DB_HOST = os.getenv("DB_HOST", default="OH_NO!")
 CSV_FILEPATH = "titanic.csv"
 
 
-connection = psycopg2.connect(dbname=DB_NAME, user=DB_USER, password=DB_PW, host=DB_HOST)
+connection = psycopg2.connect(dbname=DB_NAME, user=DB_USER,
+                              password=DB_PW, host=DB_HOST)
 
 cursor = connection.cursor()
 
@@ -50,6 +51,16 @@ VALUES %s"""
 execute_values(cursor, insert_query, tuple_data)
 
 
+connection.commit()
+cursor.close()
+connection.close()
+
+
+connect = psycopg2.connect(dbname=DB_NAME, user=DB_USER,
+                           password=DB_PW, host=DB_HOST)
+curs = connect.cursor()
+
+
 SURVIVOR_NUM = f"""
 SELECT
 COUNT(survived)
@@ -57,10 +68,10 @@ FROM titanic_queries
 WHERE survived = true;
 """
 
-survivor_count = execute_values(SURVIVOR_NUM)
+survivor_count = curs.execute(SURVIVOR_NUM)
 print(f"There are {survivor_count} survivors from the Titanic.")
 
 
-connection.commit()
-cursor.close()
-connection.close()
+connect.commit()
+curs.close()
+connect.close()
