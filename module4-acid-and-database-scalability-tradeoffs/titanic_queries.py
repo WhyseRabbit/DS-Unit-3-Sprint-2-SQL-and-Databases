@@ -58,7 +58,8 @@ connection.close()
 
 connect = psycopg2.connect(dbname=DB_NAME, user=DB_USER,
                            password=DB_PW, host=DB_HOST)
-curs = connect.cursor()
+cursor = connect.cursor()
+curs = cursor.fetchall()
 
 
 SURVIVOR_NUM = """
@@ -68,7 +69,7 @@ FROM titanic_queries
 WHERE survived = True;
 """
 
-survivor_count = curs.fetchall(SURVIVOR_NUM)
+survivor_count = curs.execute(SURVIVOR_NUM)
 print(survivor_count)
 
 
