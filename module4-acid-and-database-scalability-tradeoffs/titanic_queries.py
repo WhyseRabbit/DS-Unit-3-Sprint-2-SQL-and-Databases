@@ -61,11 +61,11 @@ connect = psycopg2.connect(dbname=DB_NAME, user=DB_USER,
 curs = connect.cursor()
 
 
-SURVIVOR_NUM = f"""
+SURVIVOR_NUM = """
 SELECT
 COUNT(survived)
 FROM titanic_queries
-WHERE survived = true;
+WHERE survived = True;
 """
 
 survivor_count = curs.execute(SURVIVOR_NUM)
