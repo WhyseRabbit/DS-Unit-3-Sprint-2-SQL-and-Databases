@@ -68,7 +68,7 @@ FROM titanic_queries
 WHERE survived = True;
 """
 
-survivor_count = curs.execute(SURVIVOR_NUM)
+survivor_count = curs.fetchall(SURVIVOR_NUM)
 print(survivor_count)
 
 
