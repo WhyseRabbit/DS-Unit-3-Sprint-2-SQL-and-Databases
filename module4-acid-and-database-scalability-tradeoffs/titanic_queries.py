@@ -74,7 +74,7 @@ GROUP BY pclass;
 """
 
 pclass_count = query_execute(cursor, PCLASS_NUM)
-print("1\ 2\ 3", pclass_count)
+print("1, 2, 3:", pclass_count)
 
 
 connection.commit()
