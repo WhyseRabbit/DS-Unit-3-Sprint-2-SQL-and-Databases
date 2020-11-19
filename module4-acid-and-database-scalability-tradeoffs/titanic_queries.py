@@ -57,7 +57,7 @@ FROM titanic_queries
 WHERE survived = true;
 """
 
-survivor_count = cursor.execute(SURVIVOR_NUM)
+survivor_count = execute_values(SURVIVOR_NUM)
 print(f"There are {survivor_count} survivors from the Titanic.")
 
 
