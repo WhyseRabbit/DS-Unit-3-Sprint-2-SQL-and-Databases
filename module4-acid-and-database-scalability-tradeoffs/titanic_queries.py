@@ -86,7 +86,7 @@ GROUP BY pclass;
 """
 
 sorted_survivors = query_execute(cursor, PCLASS_SORTED_SURVIVORS)
-print(f"Survivors by Class: 1, 2, 3:", {sorted_survivors})
+print("Survivors by Class: 1, 2, 3:", sorted_survivors)
 
 connection.commit()
 cursor.close()
