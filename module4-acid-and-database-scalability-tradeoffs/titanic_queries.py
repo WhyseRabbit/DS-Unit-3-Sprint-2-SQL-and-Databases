@@ -53,9 +53,8 @@ execute_values(cursor, insert_query, tuple_data)
 
 SURVIVOR_NUM = """
 SELECT
-COUNT(DISTINCT survived)
+COUNT(DISTINCT survived = True)
 FROM titanic_queries
-WHERE survived > 0
 """
 
 survivor_count = cursor.execute(SURVIVOR_NUM)
