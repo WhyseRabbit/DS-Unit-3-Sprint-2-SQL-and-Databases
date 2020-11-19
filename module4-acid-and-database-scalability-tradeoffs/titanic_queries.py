@@ -59,8 +59,9 @@ WHERE survived = True;
 """
 
 
-survivor_count = cursor.execute(SURVIVOR_NUM)
-cursor.fetchall()
+cursor.execute(SURVIVOR_NUM)
+survivor_count = cursor.fetchall()
+cursor.execute(survivor_count)
 
 
 connection.commit()
