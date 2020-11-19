@@ -52,11 +52,9 @@ execute_values(cursor, insert_query, tuple_data)
 
 
 SURVIVOR_NUM = """
-SELECT
-COUNT(survived)
-FROM titanic_queries
-GROUP BY survived
-HAVING survived = True
+SELECT survived
+FROM titanic_queries as tq
+GROUP BY tq.survived= true;
 """
 
 survivor_count = cursor.execute(SURVIVOR_NUM)
