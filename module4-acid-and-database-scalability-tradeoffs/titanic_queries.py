@@ -44,11 +44,23 @@ print(data.columns.tolist())
 
 tuple_data = list(data.to_records(index=False))
 
-insert_query = f"""INSERT INTO
+insert_query = """INSERT INTO
 titanic_queries (survived, pclass, full_name, gender, age, sib_spouse_count, parent_child_count, fare)
 VALUES %s"""
 
 execute_values(cursor, insert_query, tuple_data)
+
+
+SURVIVOR_NUM = """
+SELECT
+COUNT(DISTINCT survived)
+FROM titanic_queries
+WHERE survived == True
+"""
+
+survivor_count = cursor.execute(SURVIVOR_NUM)
+print(f"There are {survivor_count} survivors from the Titanic.")
+
 
 connection.commit()
 cursor.close()
