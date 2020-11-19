@@ -69,7 +69,7 @@ WHERE survived = true;
 """
 
 survivor_count = curs.execute(SURVIVOR_NUM)
-print(f"There are {survivor_count} survivors from the Titanic.")
+print(survivor_count)
 
 
 connect.commit()
