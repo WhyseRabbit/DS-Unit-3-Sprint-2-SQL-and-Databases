@@ -63,9 +63,18 @@ FROM titanic_queries
 WHERE survived = True;
 """
 
-
 survivor_count = query_execute(cursor, SURVIVOR_NUM)
 print(f"There were {survivor_count} survivors from the Titanic")
+
+PCLASS_NUM = """
+SELECT
+COUNT(pclass)
+FROM titanic_queries
+GROUP BY pclass;
+"""
+
+pclass_count = query_execute(cursor, PCLASS_NUM)
+print("1\ 2\ 3", pclass_count)
 
 
 connection.commit()
