@@ -65,6 +65,17 @@ sorted_survivors = query_execute(cursor, PCLASS_SORTED_SURVIVORS)
 sorted_deaths = query_execute(cursor, PCLASS_SORTED_DEATHS)
 print("Survivors/Deaths by Class: 1, 2, 3:", sorted_survivors, sorted_deaths)
 
+AVERAGE_AGE = """
+SELECT
+AVG(age),
+survived
+FROM titanic_queries
+GROUP BY survived;
+"""
+
+avg_age = query_execute(cursor, AVERAGE_AGE)
+print(avg_age)
+
 conn.commit()
 cursor.close()
 conn.close()
