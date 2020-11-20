@@ -12,10 +12,10 @@ DB_HOST = os.getenv("DB_HOST", default="OH_NO!")
 CSV_FILEPATH = "titanic.csv"
 
 
-connection = psycopg2.connect(dbname=DB_NAME, user=DB_USER,
-                              password=DB_PW, host=DB_HOST)
+conn = psycopg2.connect(dbname=DB_NAME, user=DB_USER,
+                        password=DB_PW, host=DB_HOST)
 
-cursor = connection.cursor()
+cursor = conn.cursor()
 
 
 def query_execute(cursor, query):
@@ -64,3 +64,7 @@ GROUP BY pclass;
 sorted_survivors = query_execute(cursor, PCLASS_SORTED_SURVIVORS)
 sorted_deaths = query_execute(cursor, PCLASS_SORTED_DEATHS)
 print("Survivors/Deaths by Class: 1, 2, 3:", sorted_survivors, sorted_deaths)
+
+conn.commit()
+cursor.close()
+conn.close()
